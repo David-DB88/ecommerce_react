@@ -11,6 +11,7 @@ import Suppliers from "./Components/Suppliers/Suppliers";
 // import Home from "./Components/";
 import Menu from "./Components/Menu";
 import Registration from "./Components/Registration";
+import CatigorProd from "./Components/Categories/CategoryProductPagePage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/home" component={Home} /> */}
           <Route path="/registration" component={Registration} />
           <Route path="/categories" component={Categories} />
+          <Route path="/category_product/:index" component={CatigorProd}/>
           <Route path="/customers" component={Customers} />
           <Route path="/employees" component={Employees} />
           <Route path="/product" component={Product} />

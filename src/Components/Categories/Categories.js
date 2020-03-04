@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 export default class Categories extends React.Component {
   state = {
-    categori: [],
-    key: ""
+    categori: []
   };
 
   componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`).then(res => {
+    axios.get(`http://localhost:3001/categories`).then(res => {
       const categori = res.data;
+      console.log(categori);
       this.setState({ categori });
     });
   }
@@ -20,8 +20,8 @@ export default class Categories extends React.Component {
       <div>
         <ul>
           {this.state.categori.map((categor, index) => (
-            <Link to="/product/catigorProd">
-              <li key={index}>{categor.name}</li>
+            <Link key={index} index={categor.id} to={`/category_product/${categor.id}`}>
+              <li>{categor.categoryName}</li>
             </Link>
           ))}
         </ul>

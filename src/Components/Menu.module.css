@@ -1,0 +1,27 @@
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 80px;
+	background-color:#383838;
+}
+
+.nav h1{
+    color: aliceblue;
+    margin-left: 2%;
+}
+
+.Menu{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    list-style: none;
+    margin-right: 50%;
+	
+}
+.Menu li{
+	color: white;
+	text-transform: uppercase;
+	
+}

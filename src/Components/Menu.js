@@ -6,10 +6,10 @@ import s from "./Menu.module.css";
 class Menu extends Component {
   render() {
     return (
-      <nav className={s.header}>
-        <img src="https://w3newbie.com/wp-content/uploads/w3newbie-logo-black.png" />
-
-        <ul className={s.heander}>
+      <nav className={s.nav}>
+        <h1>DASHDboard</h1>
+        <ul className={s.Menu}>
+          
           <Link to="/home">
             <li>Home</li>
           </Link>
