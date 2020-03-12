@@ -14,10 +14,6 @@ class Menu extends Component {
             <li>Home</li>
           </Link>
 
-          <Link to="/registration">
-            <li>Registration</li>
-          </Link>
-
           <Link to="/categories">
             <li>Categories</li>
           </Link>
@@ -35,7 +31,16 @@ class Menu extends Component {
           <Link to="/suppliers">
             <li>Suppliers</li>
           </Link>
-        </ul>
+          </ul>
+
+          <ul className={s.Menu1}>
+          <Link to="/registration">
+            <li>Sign Up</li>
+          </Link>
+          <Link to="/authorization">
+            <li>Sign In</li>
+          </Link>
+          </ul>
       </nav>
     );
   }

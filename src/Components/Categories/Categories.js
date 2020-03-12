@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import s from "./Categories.module.css";
 
 export default class Categories extends React.Component {
   state = {
@@ -17,11 +18,11 @@ export default class Categories extends React.Component {
 
   render() {
     return (
-      <div>
-        <ul>
+      <div  style={{height: '400px'}}>
+        <ul  style={{}}>
           {this.state.categori.map((categor, index) => (
-            <Link key={index} index={categor.id} to={`/category_product/${categor.id}`}>
-              <li>{categor.categoryName}</li>
+            <Link style={{textDecoration: 'none', height: '400px'}} key={index} index={categor.id} to={`/categories-product/${categor.id}`}>
+              <p className={s.accordion}>{categor.categoryName}</p>
             </Link>
           ))}
         </ul>

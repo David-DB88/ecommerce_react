@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import s from "./Valid.module.css";
 
-class RegisterForm extends Component {
+class AuthorizationForm extends Component {
   state = {
-    login: "name",
+    email: "name",
     password: "password",
     errorForm: "",
     count: 0,
@@ -14,13 +15,15 @@ class RegisterForm extends Component {
     let errorForm = "";
     let err = "";
     if (
-      this.state.login === "name" ||
-      this.state.login.length > 10 ||
-      !this.state.login.match(/[1-9]/g)
+      this.state.email === "name" ||
+      this.state.email.length > 10 ||
+      !this.state.email.match(/[1-9]/g)||
+      !this.state.email.includes("@")
+
     ) {
       errorForm = "You have a some ERROR";
     } else if (this.state.count === 3) {
-      err = "Cannot log in at this time. Contact the System Administrator";
+      err = "Cannot login at this time. Contact the System Administrator";
     }
 
     if (errorForm) {
@@ -61,14 +64,15 @@ class RegisterForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.hanleSubmit.bind(this)}>
+      <form className={s.myform} onSubmit={this.hanleSubmit.bind(this)}>
+        <h1>Sign In</h1>
         <h1>{this.state.errorForm}</h1>
         <h1>{this.state.err}</h1>
         <div>
           <input
             type="text"
-            name="login"
-            placeholder="Enter your Login"
+            name="email"
+            placeholder="Enter your Email"
             // pattern="^[ 0-9]+$"
             onChange={this.handleChange.bind(this)}
           />
@@ -82,16 +86,14 @@ class RegisterForm extends Component {
           />
         </div>
         <div>
-          <button
+          <input
             type="submit"
-            // value={"submit"}
+            value="Sign In"
             onClick={this.incrementCount.bind(this)}
-          >
-            Submit
-          </button>
+          />
         </div>
       </form>
     );
   }
 }
-export default RegisterForm;
+export default AuthorizationForm;

@@ -4,24 +4,36 @@
 	align-items: center;
 	min-height: 80px;
 	background-color:#383838;
+	
 }
 
 .nav h1{
     color: aliceblue;
-    margin-left: 2%;
+    margin: auto;
 }
 
 .Menu{
-	width: 40%;
+	width: 600px;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
     list-style: none;
-    margin-right: 50%;
-	
+    margin-right: 250px;	
 }
+.Menu1{
+	width: 150px;
+	display: flex;
+    list-style: none;
+    margin-right: 30px;	
+}
+
 .Menu li{
 	color: white;
 	text-transform: uppercase;
+	padding: 6px;
+	
+}
+.Menu1 li{
+	color: white;
+	text-transform: uppercase;
+	padding: 6px;
 	
 }
