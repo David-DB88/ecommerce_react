@@ -17,8 +17,8 @@ class Customers extends Component {
             </a>
             <div className={s.dropdownContent}>
               <Link to="/allcustomers">All Customers</Link>
-              <Link to="/find_the_customer">Find The Customer</Link>
               <Link to="/create_customer">Create a New Customer</Link>
+              <Link to="/find_the_customer">Find The Customer</Link>
               <Link to="/update_customer">Update the Customer</Link>
               <Link to="/delete_customer">Delete the Customer</Link>
             </div>

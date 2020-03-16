@@ -18,6 +18,11 @@ import FindTheCustomer from "./Components/Customers/FindTheCustomer";
 import CreateCustomer from "./Components/Customers/CreateCustomer";
 import UpadteCustomer from "./Components/Customers/UpdateCustomer";
 import DeleteCustomer from "./Components/Customers/DeleteCustomer";
+import AllEmployees from "./Components/Employees/AllEmployees";
+import CreateEmployee from "./Components/Employees/CreateEmployee";
+import FindTheEmployee from "./Components/Employees/FindTheEmployee";
+import UpadteEmployee from "./Components/Employees/UpdateEmployee";
+import DeleteEmployee from "./Components/Employees/DeleteEmployee";
 
 function App() {
   return (
@@ -34,12 +39,18 @@ function App() {
           {/* ---------------------------------------------------------------- */}
           <Route path="/customers" component={Customers} />
           <Route path="/allcustomers" component={AllCustomers} />
-          <Route path="/find_the_customer" component={FindTheCustomer} />
           <Route path="/create_customer" component={CreateCustomer} />
+          <Route path="/find_the_customer" component={FindTheCustomer} />
           <Route path="/update_customer" component={UpadteCustomer} />
           <Route path="/delete_customer" component={DeleteCustomer} />
           {/* ---------------------------------------------------------------- */}
           <Route path="/employees" component={Employees} />
+          <Route path="/allemployees" component={AllEmployees} />
+          <Route path="/create_employee" component={CreateEmployee} />
+          <Route path="/find_the_employee" component={FindTheEmployee} />
+          <Route path="/update_employee" component={UpadteEmployee} />
+          <Route path="/delete_employee" component={DeleteEmployee} />
+          {/* ---------------------------------------------------------------- */}
           <Route path="/product" component={Product} />
           <Route path="/shippers" component={Shippers} />
           <Route path="/suppliers" component={Suppliers} />
