@@ -13,6 +13,11 @@ import Menu from "./Components/Menu";
 import Registration from "./Components/Registration/Registration";
 import Authorization from "./Components/Authorization/Authorization";
 import CatigorProd from "./Components/Categories/CategoryProductPagePage";
+import AllCustomers from "./Components/Customers/AllCustomers";
+import FindTheCustomer from "./Components/Customers/FindTheCustomer";
+import CreateCustomer from "./Components/Customers/CreateCustomer";
+import UpadteCustomer from "./Components/Customers/UpdateCustomer";
+import DeleteCustomer from "./Components/Customers/DeleteCustomer";
 
 function App() {
   return (
@@ -24,8 +29,15 @@ function App() {
           {/* <Route path="/" exact component={Hom} />
           <Route path="/home" component={Home} /> */}
           <Route path="/categories" component={Categories} />
-          <Route path="/categories-product/:index" component={CatigorProd}/>
+          <Route path="/categories-product/:index" component={CatigorProd} />
+          {/* ---------------------------------------------------------------- */}
           <Route path="/customers" component={Customers} />
+          <Route path="/allcustomers" component={AllCustomers} />
+          <Route path="/find_the_customer" component={FindTheCustomer} />
+          <Route path="/create_customer" component={CreateCustomer} />
+          <Route path="/update_customer" component={UpadteCustomer} />
+          <Route path="/delete_customer" component={DeleteCustomer} />
+          {/* ---------------------------------------------------------------- */}
           <Route path="/employees" component={Employees} />
           <Route path="/product" component={Product} />
           <Route path="/shippers" component={Shippers} />
