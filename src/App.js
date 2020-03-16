@@ -28,6 +28,7 @@ function App() {
         <div>
           {/* <Route path="/" exact component={Hom} />
           <Route path="/home" component={Home} /> */}
+          {/* ____________________________________________________________ */}
           <Route path="/categories" component={Categories} />
           <Route path="/categories-product/:index" component={CatigorProd} />
           {/* ---------------------------------------------------------------- */}
