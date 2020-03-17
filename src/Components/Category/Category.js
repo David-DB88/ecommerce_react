@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import s from "./DropDown.module.css";
 import { Link } from "react-router-dom";
-import Category from "../Category/Category";
 
-class Products extends Component {
+class Category extends Component {
   render() {
     return (
       <div>
         <ul>
           <li className={s.dropdown}>
             <a href="javascript:void(0)" className={s.dropbtn}>
-              Products
+              Category
             </a>
             <div className={s.dropdownContent}>
               <Link to="/allproducts">All Products</Link>
@@ -18,9 +17,6 @@ class Products extends Component {
               <Link to="/find_the_product">Find The Product</Link>
               <Link to="/update_product">Update the Product</Link>
               <Link to="/delete_product">Delete the Product</Link>
-              <Link style={{ backgroundColor: "wihte" }}>
-                <Category />
-              </Link>
             </div>
           </li>
         </ul>
@@ -29,4 +25,4 @@ class Products extends Component {
   }
 }
 
-export default Products;
+export default Category;

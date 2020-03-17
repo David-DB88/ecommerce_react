@@ -23,6 +23,11 @@ import CreateEmployee from "./Components/Employees/CreateEmployee";
 import FindTheEmployee from "./Components/Employees/FindTheEmployee";
 import UpadteEmployee from "./Components/Employees/UpdateEmployee";
 import DeleteEmployee from "./Components/Employees/DeleteEmployee";
+import AllProducts from "./Components/Product/AllProducts";
+import CreateProduct from "./Components/Product/CreateProduct";
+import FindTheProducts from "./Components/Product/FindTheProduct";
+import UpadteProduct from "./Components/Product/UpdateProduct";
+import DeleteProduct from "./Components/Product/DeleteProduct";
 
 function App() {
   return (
@@ -52,6 +57,12 @@ function App() {
           <Route path="/delete_employee" component={DeleteEmployee} />
           {/* ---------------------------------------------------------------- */}
           <Route path="/product" component={Product} />
+          <Route path="/allproducts" component={AllProducts} />
+          <Route path="/create_product" component={CreateProduct} />
+          <Route path="/find_the_product" component={FindTheProducts} />
+          <Route path="/update_product" component={UpadteProduct} />
+          <Route path="/delete_product" component={DeleteProduct} />
+          {/* ---------------------------------------------------------------- */}
           <Route path="/shippers" component={Shippers} />
           <Route path="/suppliers" component={Suppliers} />
           <Route path="/authorization" component={Authorization} />
